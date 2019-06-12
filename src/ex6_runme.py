@@ -23,7 +23,7 @@ def sgd(data, label, iters, eta, w, batch):
 	'''
 	pass
 
-def test_error(w, test_data, test_labels, threshold):
+def test_error(w, test_data, test_labels):
 	'''
 	:param w: 			type=np.array, shape=(n_features + 1, 1)
 	:param test_data: 	type=np.array, shape=(n_samples, n_features)
