@@ -121,12 +121,6 @@ Alon Emanuel - 205894058
 
 
 \begin_inset FormulaMacro
-\newcommand{\a}{\alpha}
-{\alpha}
-\end_inset
-
-
-\begin_inset FormulaMacro
 \newcommand{\uneq}[1]{\underset{\left[#1\right]}{=}}
 {\underset{\left[#1\right]}{=}}
 \end_inset
@@ -389,160 +383,6 @@ Thus,
 Q3
 \end_layout
 
-\begin_layout Itemize
-Let 
-\begin_inset Formula $C$
-\end_inset
-
- be a convex set, and let 
-\begin_inset Formula $f$
-\end_inset
-
- be some convex function over it..
- That is, for every 
-\begin_inset Formula $u,v\in C$
-\end_inset
-
- and for every 
-\begin_inset Formula $\a\in\left[0,1\right]$
-\end_inset
-
-, we have that 
-\begin_inset Formula $\a u+\left(1-\a\right)v\in C$
-\end_inset
-
- and also 
-\begin_inset Formula $f\left(\a u+\left(1-\a\right)v\right)\le\a f\left(u\right)+\left(1-\a\right)f\left(v\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Let 
-\begin_inset Formula $\begin{bmatrix}u\\
-t_{1}
-\end{bmatrix},\begin{bmatrix}v\\
-t_{2}
-\end{bmatrix}\in\text{epi}\left(f\right)$
-\end_inset
-
-, and let 
-\begin_inset Formula $\a\in\left[0,1\right]$
-\end_inset
-
- be some scalar.
-\end_layout
-
-\begin_layout Itemize
-We must show that 
-\begin_inset Formula $\a\begin{bmatrix}u\\
-t_{1}
-\end{bmatrix}+\left(1-\a\right)\begin{bmatrix}v\\
-t_{2}
-\end{bmatrix}=\begin{bmatrix}\a u+\left(1-\a\right)v\\
-\a t_{1}+\left(1-\a\right)t_{2}
-\end{bmatrix}\in\text{epi}\left(f\right)$
-\end_inset
-
-.
- Namely, that 
-\begin_inset Formula $f\left(\a u+\left(1-\a\right)v\right)\le\a t_{1}+\left(1-\a\right)t_{2}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-We have that:
-\begin_inset Formula 
-\begin{align*}
-f\left(\a u+\left(1-\a\right)v\right) & \le\a f\left(u\right)+\left(1-\a\right)f\left(v\right)\\
- & \le\a t_{1}+\left(1-\a\right)t_{2}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-And we're done.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Now, assume 
-\begin_inset Formula $\text{epi}\left(f\right)$
-\end_inset
-
- is convex.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Let 
-\begin_inset Formula $u,v\in C$
-\end_inset
-
- and 
-\begin_inset Formula $\a\in\left[0,1\right]$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-Obviously, 
-\begin_inset Formula $\begin{bmatrix}u\\
-u
-\end{bmatrix}$
-\end_inset
-
- and 
-\begin_inset Formula $\begin{bmatrix}v\\
-v
-\end{bmatrix}$
-\end_inset
-
- are in 
-\begin_inset Formula $\text{epi}\left(f\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-Thus, 
-\begin_inset Formula $\a\begin{bmatrix}u\\
-u
-\end{bmatrix}+\left(1-\a\right)\begin{bmatrix}v\\
-v
-\end{bmatrix}\in\text{epi}\left(f\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-We must show that 
-\begin_inset Formula $f\left(\a u+\left(1-\a\right)v\right)\le\a f\left(u\right)+\left(1-\a\right)f\left(v\right)$
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{align*}
-f\left(\a u+\left(1-\a\right)v\right)\\
-\a u+\left(1-\a\right)v\in C\\
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -581,44 +421,6 @@ SVM
 Q5
 \end_layout
 
-\begin_layout Itemize
-F
-\begin_inset Formula 
-\begin{align*}
-f\left(\alpha w+\left(1-\alpha\right)u\right) & =l_{x,y}^{hinge}\left(\alpha w+\left(1-\a\right)u\right)\\
- & =\max\left[0,1-y\left\langle \alpha w+\left(1-\a\right)u,x\right\rangle \right]\\
- & =\max\left[0,1-\a y\left\langle w,x\right\rangle -\left(1-\a\right)y\left\langle u,x\right\rangle \right]\\
- & =\max\left[0,1-y\left(\a\left\langle w,x\right\rangle +\left(1-\a\right)\left\langle u,x\right\rangle \right)\right]\\
- & \le\\
- & =\a\max\left[0,1-y\left\langle w,x\right\rangle \right]+\left(1-\a\right)\max\left[0,1-y\left\langle u,x\right\rangle \right]\\
- & =\a f\left(w\right)+\left(1-\a\right)u
-\end{align*}
-
-\end_inset
-
-irst, convert 
-\begin_inset Formula $ $
-\end_inset
-
- Let 
-\begin_inset Formula $w,w'\in\r^{d}$
-\end_inset
-
-, 
-\begin_inset Formula $b,b'\in\r$
-\end_inset
-
-:
-\begin_inset Formula 
-\[
-l
-\]
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -634,10 +436,6 @@ co
 
 \begin_layout Subsection*
 Q6
-\end_layout
-
-\begin_layout Itemize
-We've seen in the tirgul that
 \end_layout
 
 \begin_layout Standard
