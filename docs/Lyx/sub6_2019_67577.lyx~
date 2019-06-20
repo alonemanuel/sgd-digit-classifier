@@ -582,49 +582,7 @@ Regularization
 Q14
 \end_layout
 
-\begin_layout Itemize
-In past recitations we have shown that if 
-\begin_inset Formula $XX^{T}$
-\end_inset
-
- is invertible, then 
-\begin_inset Formula $\hat{w}=\left(XX^{T}\right)^{-1}Xy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-We'll plug 
-\begin_inset Formula $A_{\lambda}\hat{w}=\left(XX^{T}+\lambda I_{d}\right)^{-1}\left(XX^{T}\right)\left(XX^{T}\right)^{-1}Xy$
-\end_inset
-
- into the ridge loss, and see that it indeed gives us the minimum:
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset Formula 
-\begin{align*}
-\norm{y-X^{T}\left(A_{\lambda}\hat{w}\right)}+\lambda\norm{A_{\lambda}\hat{w}} & =\\
-=\norm{y-X^{T}\left(\left(XX^{T}+\lambda I_{d}\right)^{-1}\left(XX^{T}\right)\left(XX^{T}\right)^{-1}Xy\right)}+\lambda\norm{\left(XX^{T}+\lambda I_{d}\right)^{-1}\left(XX^{T}\right)\left(XX^{T}\right)^{-1}Xy} & =
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align*}
-\norm{y-X^{T}w}+\lambda\norm w\\
-\norm{y-X^{T}w}+\lambda\norm{A_{\lambda}}
-\end{align*}
-
-\end_inset
-
 
 \end_layout
 
