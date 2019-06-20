@@ -13,7 +13,7 @@ def gd(data, label, iters, eta, w):
 def sgd(data, label, iters, eta, w, batch):
 	'''
 	:param data:	type=np.array, shape=(n_samples, n_features)
-	:param label: 	type=np.array, shape=(n_samples, 1)
+	:param label: 	type=np.array, shape?=(n_samples, 1)
 	:param iters:	type=int
 	:param eta: 	type=uint
 	:param w: 		type=np.array, shape=(n_features + 1, 1)
